@@ -28,6 +28,9 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* remove underline from links */
+a {text-decoration: none; }
+
 /* HEADER */
 
 header {
