@@ -11,7 +11,7 @@
     --text: #f5efff;
     --text-muted: #b7aabe;
     --border: #493365;
-}
+} logo
 
 /* GENERAL */
 
@@ -325,6 +325,29 @@ footer {
     font-weight: bold;
     letter-spacing: 3px;
     margin-bottom: 15px;
+}
+
+.footer-logo a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 20px 0;
+}
+
+.footer-links a {
+    color: #b7aabe;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #c084fc;
 }
 
 .copyright {

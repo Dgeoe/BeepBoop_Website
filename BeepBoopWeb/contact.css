@@ -1,0 +1,184 @@
+/* CONTACT PAGE */
+
+.contact-hero {
+    text-align: center;
+    padding: 120px 20px 80px;
+    background: #120e20;
+} 
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: var(--purple-bright);
+}
+
+nav a {
+    color: var(--text);
+    text-decoration: none;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--purple-bright);
+}
+
+.contact-hero h1 {
+    font-size:  clamp(3rem, 8vw, 6rem);
+    margin: 15px 0;
+    color: #f5efff;
+}
+
+.contact-hero h1 span {
+    color: #a855f7;
+}
+
+.contact-hero > p:last-child {
+    color: #b7aabe;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.contact-section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin: 15px 0;
+    color: #f5efff;
+}
+
+.contact-section > p:not(.section-tag) {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    color: #b7aabe;
+    line-height: 1.7;
+}
+
+/* SOCIAL MEDIA CARDS */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: 40px auto 0;
+}
+
+.contact-card {
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    padding: 30px;
+    background: #1b1530;
+    border: 1px solid #493365;
+    border-radius: 12px;
+    transition: 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    border-color: #a855f7;
+    background: #241a3b;
+}
+
+.contact-card h3 {
+    color: #d8b4fe;
+    margin-bottom: 12px;
+}
+
+.contact-card p {
+    color: #b7aabe;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.contact-card span {
+    color: #c084fc;
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+/* EMAIL SECTION */
+
+.email-section {
+    background: #120e20;
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 15px;
+    background: #a855f7;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.contact-button:hover {
+    background: #c084fc;
+    transform: translateY(-3px);
+}
+
+/* PRESS KIT */
+
+.press-card {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 35px;
+    background: #1b1530;
+    border: 1px solid #493365;
+    border-radius: 12px;
+}
+
+.press-card h3 {
+    color: #d8b4fe;
+    margin-bottom: 15px;
+}
+
+.press-card p {
+    color: #b7aabe;
+    line-height: 1.7;
+}
+
+.press-contact {
+    color: #b7aabe;
+    margin-top: 25px;
+}
+
+.press-contact a {
+    color: #c084fc;
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+    .contact-hero {
+        padding: 90px 20px 60px;
+    }
+
+    .contact-section {
+        padding: 60px 6%;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-section h2 {
+        font-size: 2rem;
+    }
+
+    .press-card {
+        padding: 25px 20px;
+    }
+}
