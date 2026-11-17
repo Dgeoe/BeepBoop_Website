@@ -11,15 +11,31 @@
     --text: #f5efff;
     --text-muted: #b7aabe;
     --border: #493365;
-} logo
+} 
 
 .logo a {
-    color: var(--text); 
+    color: #ffffff;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
+.logo span {
+    color: #a855f7;
+    transition: color 0.3s ease;
+}
+
+/* Flip the colours on hover */
 .logo a:hover {
-    color: var(--purple-bright); 
+    color: #a855f7;
+}
+
+.logo a:hover span {
+    color: #ffffff;
+}
+
+.hero .btn {
+    margin-top: 40px;
+    margin-left: 25px;
 }
 
 

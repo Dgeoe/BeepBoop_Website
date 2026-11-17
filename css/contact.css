@@ -23,6 +23,18 @@ nav a {
     transition: 0.3s;
 }
 
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.logo,
+.btn,
+button,
+.section-tag {
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
 nav a:hover {
     color: var(--purple-bright);
 }

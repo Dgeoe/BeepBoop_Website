@@ -29,6 +29,18 @@
     color: #c084fc;
 }
 
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.logo,
+.btn,
+button,
+.section-tag {
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
 .anamir-hero > p:not(.section-tag) {
     max-width: 650px;
     color: #b7aabe;
