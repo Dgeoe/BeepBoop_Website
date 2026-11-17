@@ -13,14 +13,23 @@
     --border: #493365;
 } logo
 
+.logo a {
+    color: var(--text); 
+    text-decoration: none;
+}
 
-/* WEBSITE FONT - BAI JAMJUREE (kinda like the font from nintendo UI but fully copyright free */
+.logo a:hover {
+    color: var(--purple-bright); 
+}
+
+
+/* Main Font for Site is  BAI JAMJUREE (kinda like the font from nintendo UI but fully copyright free */
 
 body {
     font-family: 'Bai Jamjuree', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6
+h1, h2, h3, h4, h5, h6,
 .logo,
 .btn,
 button,
