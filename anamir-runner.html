@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anamir Runner | Beep Boop Productions</title>
+
+    <link rel="icon" type="image/png" href="./images/WebsiteFavicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .runner-page {
+            min-height: 75vh;
+            padding: 100px 5% 80px;
+            text-align: center;
+        }
+
+        .runner-page h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            color: var(--text);
+            margin-bottom: 10px;
+        }
+
+        .runner-page h1 span {
+            color: var(--purple-bright);
+        }
+
+        .runner-intro {
+            color: var(--text-muted);
+            margin-bottom: 35px;
+        }
+
+        .game-container {
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 15px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 15px;
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+        }
+
+        .game-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 10px 15px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        #score {
+            color: var(--purple-bright);
+            font-weight: 700;
+        }
+
+        #game {
+            display: block;
+            width: 100%;
+            height: auto;
+            background: #100b1d;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            touch-action: manipulation;
+        }
+
+        .game-instructions {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin: 18px 0 5px;
+        }
+
+        .game-button {
+            background: var(--purple);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            padding: 10px 25px;
+            margin-top: 12px;
+            font-family: inherit;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.2s ease;
+        }
+
+        .game-button:hover {
+            background: var(--purple-bright);
+            transform: translateY(-2px);
+        }
+
+        .game-over {
+            color: #ff8bba;
+            font-weight: 700;
+            min-height: 24px;
+            margin-top: 12px;
+        }
+
+        .anamir-cta {
+            margin: 65px auto 10px;
+            max-width: 650px;
+        }
+
+        .anamir-cta h2 {
+            color: var(--text);
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+
+        .anamir-cta p {
+            color: var(--text-muted);
+            margin-bottom: 25px;
+        }
+
+        .anamir-link {
+            display: inline-block;
+            background: var(--purple);
+            color: white;
+            padding: 13px 30px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: 0.2s ease;
+        }
+
+        .anamir-link:hover {
+            background: var(--purple-bright);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 600px) {
+            .runner-page {
+                padding: 65px 4% 50px;
+            }
+
+            .game-container {
+                padding: 8px;
+            }
+
+            .game-top {
+                font-size: 0.8rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                BEEP BOOP<span> PRODUCTIONS</span>
+            </a>
+        </div>
+
+        <nav>
+            <a href="index.html#home">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#team">Team</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- GAME -->
+    <main class="runner-page">
+
+        <h1>ANAMIR <span>RUNNER</span></h1>
+
+        <p class="runner-intro">
+            How long can you survive the black hole? 
+        </p>
+
+        <div class="game-container">
+
+            <div class="game-top">
+                <span>Anamir Web Runner</span>
+                <span>SCORE: <span id="score">0</span></span>
+            </div>
+
+            <canvas id="game" width="900" height="260"></canvas>
+
+            <p class="game-instructions">
+                Press SPACE or ↑ to jump. On mobile, tap the game!
+            </p>
+
+            <button class="game-button" id="restart">START GAME</button>
+
+        </div>
+
+
+        <!-- ANAMIR LINK -->
+        <section class="anamir-cta">
+
+            <h2>Want to see the real thing?</h2>
+
+            <p>
+                This is just a little taste of the chaos.
+                Check out Anamir, our multiplayer party racing game!
+            </p>
+
+            <a href="anamir-home.html" class="anamir-link">
+                CHECK OUT ANAMIR →
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo">
+            <a href="index.html">BEEP BOOP PRODUCTIONS</a>
+        </div>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#team">Team</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <p>4th Year Game Design | TU Dublin</p>
+        <p class="copyright">
+            © 2026 Beep Boop Productions. All rights reserved.
+        </p>
+    </footer>
+
+</body>
+</html>

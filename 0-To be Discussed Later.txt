@@ -5,3 +5,5 @@ namecheap.com: BeepBoopProd.com, BeepBoopDevs.com, BeepBoopProductions.games
 light mode + dark mode?
 
 mobile site design?
+
+anamir t-rex game html/java (accessed through clicking on little doll waving at bottom of the page) 
